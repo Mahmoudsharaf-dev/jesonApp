@@ -1,6 +1,6 @@
 $(document).ready(function(){
  //   $("#adduser").prop('disabled',true)
-//إضافة مستخدم (عملية إنشاء حساب جديد)
+//--add user(register)
 $("#adduser").click(function(){
 let uname=$("#username").val();
 let uemail=$("#useremail").val();
@@ -14,14 +14,14 @@ var userData ={ name: uname, email: uemail,password:upassword};
  url: "http://localhost:3000/api/addUser",
 data:JSON.stringify(userData),
  success: function(){
-    alert("تم التسجيل")
+    alert("done")
     },
- error: function() { alert("فشل التسجيل") }
+ error: function() { alert("error") }
  });
 
 })
 //--------------------------------------------------------------
-//- عملية البحث عن المستخدم
+//--- search user
 $("#getuser").click(function(){
    let userid=$("#useritemsearch").val();
    $( "#usermail" ).prop( "disabled", true );
@@ -42,7 +42,7 @@ $.ajax({
 
 })
 //-------------------------------------------------------------
-//- عملية تحديث بيانات مستخدم
+//---update user
 $("#updateitem").click(function(){
 let userid=$("#useritemsearch").val();
 let uname=$("#username").val();
@@ -58,7 +58,7 @@ $.ajax({
    url: "http://localhost:3000/api/updateUser/"+userid,
    data:JSON.stringify(userData),
    success: function(data){
-      alert("تم تحديث بيانات المستخدم")
+      alert("done")
 $("#username").val("");
 $("#usermail").val("");
 $("#userpas").val("");
@@ -71,7 +71,7 @@ $("#userrol").val("");
 
 })
 //-------------------------------------------------------------
-//-- عملية حذف مستخدم 
+//-- delete user 
 $("#deleteitem").click(function(){
 let usrid=$("#useritemsearch").val();
 $.ajax({
@@ -80,7 +80,7 @@ $.ajax({
    contentType: "application/json; charset=utf-8",
    url: "http://localhost:3000/api/deleteUser/"+usrid,
    success: function(){
-      alert("تم حذف المستخدم")
+      alert("done")
 
       },
    error: function() { alert("Error") }
@@ -88,7 +88,7 @@ $.ajax({
 
 })
 //--------------------------------------------------------------
-//عملية البحث عن سلعة
+//
 //--search item
 $("#getpro").click(function(){
    let ser=$("#itemsearch").val();
@@ -103,7 +103,7 @@ $.ajax({
 
    
       },
-   error: function() { alert("فشل التسجيل") }
+   error: function() { alert("error") }
    });
 
 })
