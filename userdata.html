@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./assets/bootstrap.min.css" integrity="sha384-JvExCACAZcHNJEc7156QaHXTnQL3hQBixvj5RV5buE7vgnNEzzskDtx9NQ4p6BJe" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/main.css">
+    <title>updateUser</title>
+  </head>
+  <body>
+<!--------nav-->
+<nav class="navbar navbar-expand-lg  navbar-dark bg-dark" style="direction: rtl;">
+    <a class="navbar-brand" href="#">متجرنا</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item ">
+          <a  class="nav-link" href="./Home.html">الرئيسية </a>
+        </li>
+        <li class="nav-item">
+          <a  class="nav-link" href="./aboutUs.html">عنا</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="./contactus.html">اتصل بنا </a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="./login.html">تسجيل الدخول</a>
+          </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            قائمتي
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="./userdata.html">بياناتي</a>
+            <a class="dropdown-item" href="./myorders.html">مشترياتي</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="./dashboard.html">لوحة التحكم</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+<!--/nav-->
+<!------------>
+<div class="maindiv">
+    <h2>تعديل البيانات </h2>
+    <form  style="margin-top: 80px; border: solid black 3px;">
+            <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-4"><label> الاسم </label> </div>
+            <div class="col-md-4"> <input id="username" class="form-control" type="text"  minlength="3" required></div>
+            <div class="col-md-2"></div>
+        </div> 
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-4"><label> البريد </label> </div>
+            <div class="col-md-4"> <input id="useremail" class="form-control" type="email" required></div>
+            <div class="col-md-2"></div>
+        </div> 
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-4"><label>كلمة المرور</label></div>
+            <div class="col-md-4"> <input id="userpassword" class="form-control" type="password"  minlength="6" required><br></div>
+            <div class="col-md-2"></div>
+        </div>
+        
+       
+   
+   <button type="submit" id="adduser" class="form-control btn-success" >تحديث </button>
+    </form>
+</div>
+ 
+
+<footer class="bg-dark" style="margin-top: 100px; color: white;direction: rtl;">
+    <div class="container-fluid">
+      <div class="row" >
+ <div class="col-md-4">
+     <h4> متجرنا</h4><br>
+     <p>نشاء متجر إحترافي في دقائق دون
+          الحاجة لأي خبرة فنية مع المنصة الاكبر في الوطن العربي.
+          دعم كل طرق الدفع. تطبيقات جوال لمتجرك. فريق من
+          الخبراء لمساعدتك. اكثر من مجرد متجر. قوالب عصرية 
+         مجانية. متجر الكتروني احترافي.</p>
+ </div>
+ <div class="col-md-4 midcol">
+    <a href="#">الشكاوي والاقتراحات</a><br>
+    <a href="#"> سياسة الاسترجاع</a><br>
+    <a href="#">فروعنا</a>
+
+ </div>
+ <div class="col-md-4 midcol" >
+    <a href="#"> حمل التطبيق</a><br>
+    <a href="#">عروضنا</a>
+ </div>
+      </div>
+    </div>
+</footer>
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="./assets/jquery-3.3.1.min.js"></script>
+    <script src="./assets/jquery-migrate-1.2.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.rtlcss.com/bootstrap/v4.5.3/js/bootstrap.min.js" integrity="sha384-VmD+lKnI0Y4FPvr6hvZRw6xvdt/QZoNHQ4h5k0RL30aGkR9ylHU56BzrE2UoohWK" crossorigin="anonymous"></script>
+
+  <script src="./assets/main.js"></script>
+  </body>
+</html>
